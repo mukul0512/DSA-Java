@@ -29,7 +29,7 @@ Static Keyword ->
 
 */
 
-package Oops.Interfaces;
+package Interfaces;
 
 class Student {
     String name;
