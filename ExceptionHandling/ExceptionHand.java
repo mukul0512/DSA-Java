@@ -1,8 +1,9 @@
+package ExceptionHandling;
 /*
     Que - Write a Java program to explain exception handling with a finally block, including two simple examples—one with and one without the finally block.
 */
 
-public class ExceptionHandling {
+public class ExceptionHand {
 
     // Example 1: Exception handling without finally block
     public static void withoutFinally() {
@@ -33,7 +34,7 @@ public class ExceptionHandling {
     public static void main(String[] args) {
         // Running without the finally block
         withoutFinally();
-        
+
         // Running with the finally block
         withFinally();
     }

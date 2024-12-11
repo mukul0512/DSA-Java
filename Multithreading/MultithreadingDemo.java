@@ -1,3 +1,4 @@
+package Multithreading;
 /*
     Que - Write a Java program to demonstrate multithreading. Also, explain the concepts of locks and semaphores with a simple program.
 */
