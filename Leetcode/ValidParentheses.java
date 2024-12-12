@@ -1,5 +1,3 @@
-package Leetcode;
-
 public class ValidParentheses {
     public static boolean validParentheses(String s) {
         while (true) {

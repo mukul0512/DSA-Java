@@ -1,5 +1,3 @@
-package Leetcode;
-
 import java.util.HashMap;
 
 public class RomanToInt {
@@ -14,7 +12,7 @@ public class RomanToInt {
         hm.put('M', 1000);
         int ans = 0;
         for(int i = 0; i < s.length(); i++) {
-            if(i < s.length() -1 && hm.get(s.charAt(i)) < hm.get(s.charAt(i + 1))) {
+            if(i < s.length() - 1 && hm.get(s.charAt(i)) < hm.get(s.charAt(i + 1))) {
                 ans = ans - hm.get(s.charAt(i));
             }
             else {

@@ -1,5 +1,3 @@
-package Leetcode;
-
 public class IsPalindrome {
     public static boolean isPalindrome(int x) {
         int sum = 0, target = x;

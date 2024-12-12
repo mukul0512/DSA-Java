@@ -1,5 +1,3 @@
-package Leetcode;
-
 import java.util.Arrays;
 
 public class LongestCommonPrefix {
@@ -15,7 +13,18 @@ public class LongestCommonPrefix {
                 break;
             }
         }
-        return index == 0 ? "" : str1.substring(0, index);
+
+        /* 
+
+        if (index == 0) {
+            return " ";
+        } else {
+            return str1.substring(0, index);
+        }
+
+        */
+        
+        return index == 0 ? " " : str1.substring(0, index);
     }
 
     public static void main(String args[]) {
