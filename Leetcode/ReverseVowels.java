@@ -21,9 +21,12 @@ public class ReverseVowels {
     }
 
     public static boolean isVowel(char ch) {
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I'
-                || ch == 'O' || ch == 'U') {
-            return true;
+        char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+
+        for (char vowel : vowels) {
+            if (ch == vowel) {
+                return true;
+            }
         }
         return false;
     }
