@@ -1,24 +1,18 @@
 public class IsPrime {
-    public static void isPrime(int num) {
-        int m = num / 2;
-        int flag = 0;
-        if (num == 0 || num == 1) {
-            System.out.println(num + " is not a prime number");
-        } else {
-            for (int i = 2; i <= m; i++) {
-                if (num % i == 0) {
-                    System.out.println(num + " is not a prime number");
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 0) {
-                System.out.println(num + " is a prime number");
+    public static boolean isPrime(int num) {
+        if (num < 2)
+            return false; // 0 and 1 are not prime numbers
+
+        for (int i = 2; i * i <= num; i++) { // Optimized loop till sqrt(num)
+            if (num % i == 0) {
+                return false; // If num is divisible by i, it's not prime
             }
         }
+        return true; // If no divisors found, it's prime
     }
 
     public static void main(String[] args) {
-        isPrime(5);
+        int num = 5;
+        System.out.println(num + " is " + (isPrime(num) ? "a prime number" : "not a prime number"));
     }
 }
